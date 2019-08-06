@@ -13,7 +13,7 @@
   <body>
 
 
- <form action="http://localhost:8080/login" method="post">
+ <form action="http://localhost:8080/user/login" method="post">
 
    <span>用户名:</span>
    <input type="text" name="username"/>

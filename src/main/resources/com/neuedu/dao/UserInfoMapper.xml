@@ -77,4 +77,19 @@
     update_time, ip
     from neuedu_user
   </select>
+
+  <select id="existsUsername" parameterType="string" resultType="int">
+    SELECT count(*) FROM neuedu_user WHERE username=#{username}
+  </select>
+
+  <select id="findByUsernameAndPassword" parameterType="com.neuedu.pojo.UserInfo"
+          resultMap="BaseResultMap">
+    SELECT id, username, password, email, phone, question, answer, role, create_time,
+    update_time FROM neuedu_user WHERE username=#{user.username} AND password=#{user.password}
+  </select>
+
+
+
+
+
 </mapper>
