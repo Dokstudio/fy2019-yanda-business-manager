@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+  <!--<properties resource="jdbc.properties"></properties>-->
+
+<!--配置log4j日志-->
+<!--<settings>-->
+  <!--<setting name="logImpl" value="LOG4J"/>-->
+<!--</settings>-->
+  <typeAliases>
+    <!--<typeAlias type="com.neuedu.pojo.UserInfo" alias="user"></typeAlias>-->
+    <!--<typeAlias type="com.neuedu.pojo.Dept" alias="dept"></typeAlias>-->
+    <!--<typeAlias type="com.neuedu.pojo.Emp" alias="emp"></typeAlias>-->
+    <!--&lt;!&ndash; 此后可以在需要写com.neuedu.pojo.UserInfo的地方用user代替com.neuedu.pojo.UserInfo &ndash;&gt;-->
+  </typeAliases>
+
+</configuration>
