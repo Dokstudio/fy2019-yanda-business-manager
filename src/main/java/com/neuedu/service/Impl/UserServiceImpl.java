@@ -18,9 +18,7 @@ public class UserServiceImpl implements IUserService{
     UserInfoMapper userInfoMapper;
 
     @Override
-    public UserInfo login(UserInfo userInfo,
-                          HttpServletRequest request,
-                          HttpServletResponse response) throws MyException {
+    public UserInfo login(UserInfo userInfo) throws MyException {
         if(userInfo==null){
             throw  new MyException("参数不能为空！");
         }
@@ -51,14 +49,12 @@ public class UserServiceImpl implements IUserService{
         }
 
 
-        Cookie username_cookie=new Cookie("username",userInfo.getUsername());
-        Cookie password_cookie=new Cookie("password",userInfo.getPassword());
-
-        username_cookie.setMaxAge(60*60*24*7);
-        password_cookie.setMaxAge(60*60*24*7);
-
-        response.addCookie(username_cookie);
-        response.addCookie(password_cookie);
+//        Cookie username_cookie=new Cookie("username",userInfo.getUsername());
+//        Cookie password_cookie=new Cookie("password",userInfo.getPassword());
+//        username_cookie.setMaxAge(60*60*24*7);
+//        password_cookie.setMaxAge(60*60*24*7);
+//        response.addCookie(username_cookie);
+//        response.addCookie(password_cookie);
 
         return userInfo1_result;
     }
