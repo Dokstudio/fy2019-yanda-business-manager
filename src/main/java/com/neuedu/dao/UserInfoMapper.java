@@ -44,7 +44,7 @@ public interface UserInfoMapper {
      *
      * @mbggenerated
      */
-    int updateByPrimaryKey(UserInfo record);
+    int updateByPrimaryKey(@Param("userInfo") UserInfo record);
 
 
     /**

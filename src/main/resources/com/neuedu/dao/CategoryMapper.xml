@@ -34,6 +34,7 @@
     #{status,jdbcType=BIT}, #{sortOrder,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP},
     #{updateTime,jdbcType=TIMESTAMP})
   </insert>
+
   <update id="updateByPrimaryKey" parameterType="com.neuedu.pojo.Category" >
     <!--
       WARNING - @mbggenerated

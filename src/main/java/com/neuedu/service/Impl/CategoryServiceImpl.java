@@ -34,14 +34,11 @@ public class CategoryServiceImpl implements ICategoryService{
     public List<Category> findAll() throws MyException {
 
         return categoryMapper.selectAll();
-
-
     }
 
     @Override
     public Category findCategoryById(int categoryId) {
 
         return  categoryMapper.selectByPrimaryKey(categoryId);
-
     }
 }
