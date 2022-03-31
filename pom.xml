@@ -18,7 +18,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <!--自定义常量spring的版本号-->
-    <spring.version>5.1.0.RELEASE</spring.version>
+    <spring.version>5.3.18</spring.version>
   </properties>
 
   <dependencies>
